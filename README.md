@@ -7,7 +7,9 @@ Implementation of convolution mask for image sharpening with optimisation of the
 How convolution works, see here: http://setosa.io/ev/image-kernels/
 
  0	-1	 0
+ 
 -1   5	-1
+
  0	-1	 0
  
 If a value lies outside the limits of the interval <0, 255>, use the appropriate limit. The pixels on the image’s edges shall be only copied from the original image (the situation where the convolution core overruns the original image).
